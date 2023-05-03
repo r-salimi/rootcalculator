@@ -3,8 +3,8 @@ import math
 from tkinter import messagebox
 
 '''
-The purpose is calculating the root of functions by using bisection and Newton method;
-The root of f(x) is between a and b, n is the minimum repetition of bisection method that calculate by log.
+The purpose is finding the root of functions by using bisection and Newton methods;
+The root of f(x) is between a and b; n is the minimum repetition of bisection method that calculate by log.
 '''
 a = float(input('please enter a: '))
 b = float(input('please enter b: '))
