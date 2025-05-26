@@ -6,13 +6,13 @@ from tkinter import messagebox
 The purpose is finding the root of functions by using bisection and Newton methods;
 The root of f(x) is between a and b; n is the minimum repetition of bisection method that calculate by log.
 '''
-a = float(input('please enter a: '))
-b = float(input('please enter b: '))
-r = int(input('pleae enter r (rD):'))
+a = float(input("Enter value for a (left bound): "))
+b = float(input("Enter value for b (right bound): "))
+r = int(input("Enter desired decimal precision (e.g. 3): "))
 ε = 5*(10**(-r-1))
 n = math.log2((b-a)/ε)
 print(n)
-m = int(input('please enter N(repetition): '))
+m = int(input("Enter max number of iterations: "))
  
 def f(x):
     return x**4+3*x**3-9*x**2-23*x-12
